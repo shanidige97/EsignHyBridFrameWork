@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.esign.utility.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.esign.testcases.HomePageTestcases" />
+			<!-- <class name="com.esign.testcases.LoginPageTestcases" />
+			<class name="com.esign.testcases.SignInJioAccountPageTestcases" />
+			<class name="com.esign.testcases.DashboardPageTestcases" />
+			<class name="com.esign.testcases.AddAadhaarEsignPageTestcases" />
+			<class name="com.esign.testcases.AddSignatureCardEsignPageTestcases" />
+			<class name="com.esign.testcases.GetListPageTestcases" />-->
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
